@@ -1,3 +1,5 @@
+**Criado com a lib ethers versão 6.13.4**
+
 Instalar dependencias 
 ```
 npm install
