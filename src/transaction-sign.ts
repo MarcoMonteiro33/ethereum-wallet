@@ -7,7 +7,8 @@ export async function signTransaction(unsignedSerialized: string, unsignedHash: 
   const signingKey = new ethers.SigningKey(privateKey);
 
   const signature = signingKey.sign(unsignedHash);
-
+  
+  console.log("Assinatura da transação signature HEX:", signature.serialized);
   console.log("Assinatura da transação r:", signature.r);
   console.log("Assinatura da transação s:", signature.s);
   console.log("Assinatura da transação v:", signature.v);
